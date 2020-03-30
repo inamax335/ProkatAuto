@@ -1,0 +1,1273 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+body
+	&.ishome
+		.header
+			background-image: url("../img/head_bg.jpg")
+			background-repeat: no-repeat
+			background-size: cover
+	&.nohome
+		background-image: url("../img/body_bg.jpg")
+		background-position: 0 200px
+		background-repeat: no-repeat
+
+.top_line
+	background-color: #fff
+	border-bottom: 1px solid #D3183C
+	padding: 20px 0
+
+.top_menu
+	font-size: 13px
+	text-transform: uppercase
+	margin-top: 12px
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-align: center
+		li
+			display: inline-block
+			&.active
+				a
+					color: #D3183C
+			&:after
+				content: '/'
+				color: #D3183C
+				margin: 0 5px
+			&:last-child
+				&:after
+					display: none
+			a
+				color: #747b8a
+				transition: color .3s ease
+				&:hover,&:active,&:focus
+					text-decoration: none
+					color: #D3183C
+					transition: color .3s ease
+
+
+.breadcrumbs
+	margin-top: 20px
+	margin-bottom: 86px
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-transform: uppercase
+		li
+			display: inline-block
+			margin: 0 5px
+			color: #012845
+			font-family: 'roboto-medium', sans-serif
+			a
+				color: #D3183C
+
+.contacts
+	a
+		color: #2f3143
+		white-space: nowrap
+		font-size: 13px
+		&:hover,&:active,&:focus
+					text-decoration: none
+					color: #D3183C
+					transition: color .3s ease
+		&.phone
+			font-size: 14px
+		img
+			vertical-align: middle
+			display: inline-block
+			margin-right: 10px
+
+.content_header
+	color: #fff
+	margin-top: 350px
+	h1
+		font-size: 60px
+		font-family: 'roboto-medium', sans-serif
+		line-height: 76px
+		letter-spacing: 3px
+		font-weight: normal
+		margin: 0
+	.desc
+		font-size: 30px
+		margin: 0
+		text-transform: uppercase
+		line-height: 43px
+		img
+			vertical-align: baseline
+
+.logo
+	display: inline-block
+
+.podbor_box
+	background-color: #edf2f4
+	border-bottom: 2px solid #cd283e
+
+.form_head
+	border-bottom: 2px solid #cd283e
+	padding: 30px 0px
+	overflow: hidden
+	h2
+		margin: 0
+		text-transform: uppercase
+		font-size: 20px
+		color: #cd283e
+		margin-top: 3px
+
+.form_body
+	padding: 30px 0px
+
+.slider_price
+	text-align: center
+
+.podbor_box
+	margin-top: -98px
+
+#price_day_lab
+	display: block
+	text-align: center
+	margin-bottom: 7px
+	font-sixe: 14px
+	color: #262643
+
+#slider-margin
+	width: 240px
+	position: relative
+	display: block
+	margin: 0 auto
+	input
+		position: absolute
+		border: none
+		background-color: transparent
+		width: 70px
+		font-family: 'roboto-medium', sans-serif
+		&#slider-margin-value-min
+			left: -81px
+			top: -13px
+		&#slider-margin-value-max
+			right: -78px
+			top: -13px
+
+#podbor
+	.form_body
+		padding-bottom: 48px
+		select, input[type="date"],input[type="text"]
+			border: none
+			width: 100%
+			height: 40px
+			padding: 0 10px
+			border: 1px solid #E2DCE6
+		label
+			text-transform: uppercase
+			color: #262643
+			display: block
+			margin-bottom: 3px
+		input[type="checkbox"]
+	.btn
+		margin-top: 28px
+		background-image: url("../img/btn_img.png")
+		background-repeat: no-repeat
+		background-position: top left
+
+
+.noUi-target
+	background: #CD283E
+	height: 3px
+	border: none
+	border-radius: unset
+
+.noUi-handle
+	border: 2px solid #CD283E
+	border-radius: 50%
+
+.noUi-horizontal .noUi-handle
+	width: 20px
+	height: 20px
+	top: -8px
+	&:before, &:after
+		display: none
+		cursor: pointer
+
+.input_group
+	display: block
+
+.chekbox_inputs
+	label
+		display: inline-block!important
+	#check_with_driver
+		margin-top: 28px
+	#check_no_driver
+		margin-bottom: 20px
+
+.text_center
+	text-align: center
+
+.btn
+	background-color: #CD283E
+	border: none
+	color: #fff
+	padding: 7px 45px
+	text-transform: uppercase
+	transition: background-color .3s ease
+	display: inline-block
+	&:hover,&:active,&:focus
+		background-color: #0A5470
+		transition: background-color .3s ease
+		color: #fff
+		text-decoration: none
+
+// Мобильное меню
+.toggle-mnu
+  display: block
+  width: 28px
+  height: 28px
+  margin-top: 14px
+  float: right
+
+  span:after, span:before
+    content: ""
+    position: absolute
+    left: 0
+    top: 9px
+
+  span:after
+    top: 18px
+
+  span
+    position: relative
+    display: block
+
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: #333333
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+
+
+  &.on span
+    background-color: transparent
+
+  &.on span:before
+    transform: rotate(45deg) translate(-1px, 0px)
+
+  &.on span:after
+    transform: rotate(-45deg) translate(6px, -7px)
+
+
+.sec_title
+	text-align: center
+	text-transform: uppercase
+	font-family: 'MyriadPro-Regular', sans-serif
+	font-size: 27px
+	position: relative
+	margin-bottom: 20px
+	&:before
+		content: ''
+		display: block
+		width: 84px
+		height: 10px
+		background-image: url("../img/title_line.png")
+		background-repeat: no-repeat
+		background-position: 0 0
+		position: absolute
+		right: 0
+		left: 0
+		margin: 0 auto
+		bottom: -22px
+
+
+section
+	&.arenda
+		padding: 60px 0 60px 0
+		.sec_title
+			margin-bottom: 50px
+
+.arenda_image
+	text-align: center
+	img
+		display: inline-block
+
+
+.arenda_left_bar
+	.step
+		margin-bottom: 60px
+		background-repeat: no-repeat
+		background-position: 196px 3px
+		&.step1
+			background-image: url("../img/arenda_step_num1.png")
+		&.step2
+			background-image: url("../img/arenda_step_num2.png")
+		&.step3
+			background-image: url("../img/arenda_step_num3.png")
+	img
+		float: right
+		display: block
+		margin-left: 25px
+		margin-top: 10px
+	.step_desc
+		text-align: right
+		overflow: hidden
+		h3
+			margin: 0 0 10px 0
+		p
+			margin: 0
+			font-size: 14px
+			color: #B7A5B4
+			line-height: 24px
+.arenda_right_bar
+	.step
+		margin-bottom: 60px
+		background-repeat: no-repeat
+		background-position: 68px 3px
+		&.step4
+			background-image: url("../img/arenda_step_num4.png")
+		&.step5
+			background-image: url("../img/arenda_step_num5.png")
+		&.step6
+			background-image: url("../img/arenda_step_num6.png")
+	img
+		float: left
+		display: block
+		margin-right: 25px
+		margin-top: 10px
+	.step_desc
+		text-align: left
+		overflow: hidden
+		h3
+			margin: 0 0 10px 0
+		p
+			margin: 0
+			font-size: 14px
+			color: #B7A5B4
+			line-height: 24px
+
+
+
+.sec_desc
+	text-align: center
+
+section
+	&.aktsiya
+		padding: 54px 0
+		background-image: url("../img/aktsiya_bg.jpg")
+		background-repeat: no-repeat
+		color: #fff
+		background-size: cover
+		.sec_desc
+			font-size: 20px
+			line-height: 24px
+			margin-bottom: 7px
+		.sec_title
+			color: #BA0133
+			font-size: 40px
+			line-height: 50px
+			font-family: 'roboto-medium', sans-serif
+			&:before
+				display: none
+
+// Таймер акции
+.timer
+	.timer_title
+		text-align: center
+	ul.countdown
+		list-style: none
+		margin: 0
+		padding: 0
+		display: inline-block
+		text-align: center
+		position: relative
+		&:before
+			content: ''
+			display: block
+			width: 42px
+			height: 42px
+			background-image: url("../img/timer_icon.png")
+			background-repeat: no-repeat
+			position: absolute
+			left: -56px
+			top: 11px
+	ul.countdown li
+		display: inline-block
+	ul.countdown li span
+		font-size: 60px
+		font-weight: normal
+		line-height: 60px
+		border-bottom: 2px solid #BA0133
+		&.seconds
+			color: #BA0133
+			border-bottom: none
+	ul.countdown li.seperator
+		font-size: 60px
+		line-height: 60px
+		vertical-align: top
+		color: #BA0133
+	ul.countdown li p
+		color: #a7abb1
+		font-size: 14px
+
+
+section
+	&.auto_business
+		padding: 80px 0
+		.catalog_auto
+			margin-top: 50px
+
+.auto_item
+	display: block
+	margin-bottom: 30px
+	position: relative
+	&:hover
+		.overlay
+			opacity: 1
+			bottom: 82px
+			transition: all .3s ease-out
+	img
+		display: block
+		margin: 0 auto
+		height: 220px
+		width: auto
+	.desc
+		display: block
+		margin-top: 15px
+		overflow: hidden
+		color: #fff
+		background-image: url("../img/cat_desc_bg.jpg")
+		background-repeat: no-repeat
+		background-position: -44px center
+		padding: 20px 20px
+		h1
+			font-weight: normal
+			font-family: 'RobotoSlabRegular', serif
+			margin: 0
+			font-size: 20px
+			line-height: 35px
+			display: inline-block
+		.price
+			float: right
+			font-size: 20px
+	.auto_item_link
+		display: block
+		text-decoration: none
+		color: #333
+	.overlay
+		position: absolute
+		bottom: 0
+		width: 100%
+		background-color: rgba(255, 255, 255, .9)
+		border: 1px solid #D2C6DA
+		padding: 20px 10px
+		opacity: 0
+		transition: all .3s ease-out
+		z-index: 1000
+		.btn_set
+			position: absolute
+			right: 11px
+			top: 12px
+			a
+				display: inline-block
+				width: 35px
+				height: 35px
+				background-color: #0A5470
+				z-index: 9999
+				&.refresh_btn
+					background-color: #ba0133
+					margin-right: -4px
+					background-image: url("../img/refresh_icon.png")
+					background-repeat: no-repeat
+					background-position: center
+				&.seach_btn
+					background-image: url("../img/search_icon.png")
+					background-repeat: no-repeat
+					background-position: center
+		table
+			.rating_auto
+				margin-bottom: 10px
+				span
+					font-weight: normal
+					color: #7B769A
+					font-size: 13px
+					margin-left: 10px
+			td
+				text-transform: uppercase
+				padding: 5px 5px
+				font-size: 14px
+				span
+					color: #7B769A
+					margin-left: 3px
+
+
+section
+	&.new_year
+		background-image: url("../img/new_year_banner.jpg")
+		background-repeat: no-repeat
+		background-size: cover
+		margin-bottom: 90px
+		.content
+			text-align: right
+			margin-top: 105px
+			p
+				font-size: 27px
+				font-style: italic
+				line-height: 35px
+			.btn
+				margin-top: 20px
+
+		.usloviya
+			text-align: right
+			font-size: 14px
+			color: #7B769A
+			margin-top: 72px
+			span
+				display: block
+
+
+section
+	&.catalog_auto
+		padding-bottom: 90px
+		.cat_filter
+			background-color: #183449
+			padding: 30px 0
+			color: #fff
+			h3
+				margin: 0
+				text-transform: uppercase
+		.filter
+			select
+				background-color: transparent
+				border: none
+				-webkit-appearance: none
+				-moz-appearance: none
+				appearance: none
+				// background-image: url("../img/select_arrow.png")
+				text-decoration: dotted
+				background-repeat: no-repeat
+				background-position: right 11px
+				font-size: 18px
+				color: #BA0133
+				text-transform: uppercase
+				display: inline-block
+				border-bottom: 1px dashed #BA0133
+				option
+					color: #333
+		.cat_list
+			width: 25px
+			height: 22px
+			display: block
+			background-image: url("../img/list_icon.png")
+			float: right
+		.catalog
+			margin-top: 48px
+
+
+.listing
+	margin-top: 30px
+	a
+		display: inline-block
+		width: 40px
+		height: 40px
+		background-color: #E8E3EC
+		color: #2f3143
+		line-height: 40px
+		font-size: 16px
+		text-align: center
+		text-decoration: none
+		margin: 0 3px
+		&.active
+			background-color: #BA0133
+			color: #fff
+	span
+		width: 40px
+		height: 40px
+		display: inline-block
+		background-color: #183449
+		color: #fff
+		text-align: center
+		line-height: 40px
+		cursor: pointer
+		i
+		 font-size: 25px
+
+
+.car_item
+	display: block
+	transition: all .3s ease
+	padding: 15px
+	position: relative
+	overflow: hidden
+	margin-bottom: 15px
+	min-height: 448px
+	&:hover
+		transition: all .3s ease
+		box-shadow: 1px 1px 5px #a395ae
+		.btn_top_set
+			display: block
+			right: 15px
+			opacity: 1
+	img
+		display: block
+		margin: 0 auto 10px auto
+		height: 117px
+	h1
+		font-size: 15px
+		margin: 0 0 5px 0
+		color: #ef233c
+		text-transform: uppercase
+	.price_name
+		padding: 0 10px
+	.price
+		border-bottom: 2px solid #BA0133
+		color: #8f98ac
+		padding: 0 10px 10px 10px
+		font-size: 14px
+		span
+			color: #cd283e
+			font-family: 'roboto-bold', sans-serif
+	.char_auto
+		margin: 15px 0
+		table
+			text-transform: uppercase
+			color: #2f3143
+			font-size: 13px
+			tr
+				td
+					padding: 3px
+		span
+			color: #8f98ac
+			margin-left: 10px
+	.btn_top_set
+		position: absolute
+		top: 15px
+		right: 15px
+		opacity: 0
+		transition: all .3s ease-out
+		a
+			display: inline-block
+			width: 35px
+			height: 35px
+			background-color: #0a5470
+			z-index: 9999
+			&.refresh_btn
+				background-color: #ba0133
+				margin-right: -4px
+				background-image: url(../img/refresh_icon.png)
+				background-repeat: no-repeat
+				background-position: center
+			&.seach_btn
+				background-image: url(../img/search_icon.png)
+				background-repeat: no-repeat
+				background-position: center
+	.rating_auto
+		margin: 0 0 5px 0
+	.btn_set
+		a
+			width: 50%
+			padding: 7px 10px
+			font-size: 12px
+			text-align: center
+			&.podrobnee
+				background-color: #183449
+				margin-right: -4px
+
+
+section
+	&.support
+		background-image: url("../img/support_bg.jpg")
+		background-repeat: no-repeat
+		background-size: cover
+		padding: 63px 0
+		color: #fff
+		text-align: center
+		img
+			margin-bottom: 35px
+		.sec_title
+			margin-bottom: 10px
+			span
+				color: #ba0133
+				font-family: 'roboto-medium', sans-serif
+			&:before
+				display: none
+		.sec_desc
+			font-size: 22px
+			text-transform: uppercase
+			span
+				color: #ba0133
+				font-family: 'roboto-medium', sans-serif
+
+
+section
+	&.blog
+		padding: 88px 0
+		.blog_items
+			margin-top: 30px
+			article
+				margin-bottom: 30px
+				img
+					margin-bottom: 30px
+					width: 100%
+				h1
+					color: #1E223F
+					margin: 0
+					font-size: 16px
+					text-transform: uppercase
+				.data_article
+					width: 55px
+					height: 55px
+					background-color: #BA0133
+					color: #fff
+					text-align: center
+					float: left
+					font-family: 'RobotoSlabRegular', sans-serif
+					text-transform: uppercase
+					font-size: 12px
+					padding-top: 10px
+					line-height: 17px
+					margin-right: 20px
+					span
+						font-family: 'roboto-bold', sans-serif
+						font-size: 13px
+				p
+					font-size: 13px
+					color: #655A63
+					margin-bottom: 20px
+				.link_article
+					color: #2B262D
+					display: block
+					border-top: 1px solid #C9BAC7
+					padding-top: 15px
+					&:hover
+						text-decoration: none
+						color: #BA0133
+
+
+footer
+	background-image: url("../img/footer_bg.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	color: #fff
+	padding-top: 90px
+	.copyright
+		border-top: 1px solid #A79CAB
+		padding-top: 20px
+		padding-bottom: 35px
+		margin-top: 77px
+		text-align: center
+		color: #7B769A
+		span
+			color: #BA0133
+	.foot_colum
+		overflow: hidden
+		h3
+			text-transform: uppercase
+			span
+				color: #BA0133
+				margin-left: 10px
+		.foot_nav
+			margin: 0
+			padding: 0
+			list-style-type: none
+			float: left
+			margin-right: 15px
+			font-size: 13px
+			li
+				a
+					color: #fff
+					text-transform: uppercase
+					transition: all .3s ease
+					display: inline-block
+					padding: 5px 0
+					&:hover
+						color: #BA0133
+						text-decoration: none
+						transition: all .3s ease
+					i
+						color: #BA0133
+						margin-right: 5px
+		.foot_desc
+			text-transform: uppercase
+		.adress
+			margin: 0
+			padding: 0
+			list-style-type: none
+			margin-right: 15px
+			text-transform: uppercase
+			font-size: 13px
+			li
+				margin-bottom: 20px
+				span
+					border-bottom: 1px dashed #BA0133
+				i
+					color: #BA0133
+					margin-right: 5px
+		.form_footer
+			input
+				background-color: #0F283B
+				border: 1px solid #060F1A
+				color: #fff
+				padding: 10px 10px
+				box-shadow: inset 0px 0px 3px #000
+				display: inline-block
+				width: 100%
+				&::placeholder
+					color: #fff
+					opacity: .3
+			textarea
+				background-color: #0F283B
+				border: 1px solid #060F1A
+				color: #fff
+				box-shadow: inset 0px 0px 3px #000
+				padding: 10px 10px
+				width: 100%
+				margin-top: 15px
+				&::placeholder
+					color: #fff
+					opacity: .3
+			.btn
+				margin-top: 15px
+				float: right
+
+
+.char_auto_side
+	h2
+		margin: 0 auto
+		background-color: #8f9597
+		color: #fff
+		text-align: center
+		font-size: 20px
+		text-transform: uppercase
+		background-image: url("../img/char_icon.png")
+		background-repeat: no-repeat
+		background-position: top left
+		font-weight: normal
+		padding: 10px 0
+	.char_auto
+		background-color: #edf2f4
+		border: 1px solid #D8CFE1
+		padding: 30px 30px
+		table
+			width: 100%
+			font-size: 14px
+			color: #1E223F
+			font-family: 'roboto-medium', sans-serif
+			font-weight: 600
+			text-transform: uppercase
+			span
+				color: #8d99ae
+			tr
+				td
+					padding: 1px 0
+	.price
+		background-color: #8f9597
+		padding: 30px 0
+		table
+			width: 100%
+			font-size: 14px
+			color: #fff
+			font-family: 'roboto-medium', sans-serif
+			font-weight: 600
+			text-transform: uppercase
+			span
+				color: #D80538
+			tr
+				td
+					padding: 4px 30px
+	.btn
+		margin-top: 40px
+		display: block
+		text-align: center
+		background-image: url(../img/btn_img.png)
+		background-repeat: no-repeat
+		background-position: top left
+		margin-left: 30px
+		margin-right: 30px
+
+
+.reviews_car
+	h3
+		background-color: #53515A
+		color: #fff
+		font-size: 20px
+		padding: 10px 20px
+
+.review_item
+	overflow: hidden
+	position: relative
+	margin-bottom: 30px
+	img
+		float: left
+		margin-right: 20px
+	.name_date
+		border-bottom: 1px solid #D3C8DD
+		h4
+			margin: 0
+			font-size: 14px
+		.data
+			font-size: 12px
+			color: #8d99ae
+	.review_content
+		overflow: hidden
+	.rating
+		position: absolute
+		right: 20px
+		top: 0
+		a
+			margin-left: 20px
+			color: #1E223F
+			&:hover
+				text-decoration: none
+	.review
+		color: #8d99ae
+		font-size: 15px
+		line-height: 21px
+		margin-top: 10px
+
+.analogs
+	padding: 30px 0 90px 0
+	.sec_title
+		font-family: 'RobotoSlabRegular', sans-serif
+		font-size: 20px
+		color: #012f47
+		text-align: left
+		&:before
+			display: none
+		span
+			color: #ef233c
+	.analogs_item
+		text-decoration: none
+		display: block
+		overflow: hidden
+		margin-bottom: 30px
+		transition: all .3s ease
+		img
+			height: 140px
+			margin-bottom: 10px
+			display: block
+			margin: 0 auto 15px auto
+		&:hover
+			.car_name
+				transition: all .3s ease
+				color: #ef233c
+	.rating
+		margin-bottom: 5px
+	.car_name
+		font-size: 15px
+		font-weight: 600
+		font-family: 'roboto-medium', sans-serif
+		color: #2b2d42
+	.price
+		font-size: 14px
+		color: #8f98ac
+		border-bottom: 1px solid #D2C6DA
+		padding-bottom: 10px
+		span
+			color: #cd283e
+
+.carousel-container
+  margin: 5px auto
+  height: 100%
+  padding-top: 50%
+  border: none
+  overflow: hidden
+  position: relative
+
+
+.carousel
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  margin: 0
+  padding: 0
+  white-space: nowrap
+  z-index: 1
+
+
+.carousel li
+  list-style-type: none
+  display: inline-block
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 0
+
+
+.carousel li img
+  height: auto
+  width: auto
+
+.thumbnails
+  position: relative
+  margin: auto
+  text-align: center
+  padding: 0
+
+.thumbnails li
+  display: inline-block
+  list-style-type: none
+  max-width: 100px
+  padding: 0
+  border: none
+  margin: 5px
+  transition: 0.25s
+  box-sizing: border-box
+
+
+
+.thumbnails li img
+  height: 100%
+  width: 100%
+  vertical-align: text-bottom
+
+
+.thumbnails li.active, .thumbnails li:hover
+  border: 5px orange solid
+
+
+.arrow
+  z-index: 10
+  position: absolute
+  padding: 0 5px
+  top: 0
+  height: 100%
+  cursor: pointer
+
+
+.arrow i:hover
+  color: #fff
+
+
+.arrow i
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+  color: #666
+  opacity: 0.7
+
+
+.right-arrow
+  right: 0
+
+
+div.ui-loader
+  display: none
+
+.mfp-close
+	top: 10px
+
+.mfp-close:active
+	top: 10px
+
+#small-dialog
+	background: white
+	text-align: left
+	max-width: 741px
+	margin: 40px auto
+	position: relative
+	h3
+		padding: 15px 20px
+		margin: 0
+		border-bottom: 2px solid #DB0235
+		color: #DB0235
+		font-size: 20px
+		text-transform: uppercase
+		font-weight: normal
+	form
+		padding: 26px 20px
+		label
+			text-transform: uppercase
+			color: #1E223F
+			font-size: 12px
+			font-family: 'roboto-medium', sans-serif
+			font-weight: 600
+			display: block
+			margin-bottom: 5px
+		input[type="text"], input[type="date"], input[type="time"]
+			border: 1px solid #DAD4E1
+			width: 100%
+			padding: 10px 15px
+		.input_group
+			margin-bottom: 20px
+		#labl_iagree
+			color: #DB0235
+			text-decoration: underline
+			input
+				margin-right: 5px
+		.btn
+			float: right
+			background-image: url(../img/btn_img.png)
+			background-repeat: no-repeat
+			background-position: top left
+
+
+/**
+ * Fade-zoom animation for first dialog
+ */
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog
+	opacity: 0
+
+	-webkit-transition: all 0.2s ease-in-out
+	-moz-transition: all 0.2s ease-in-out
+	-o-transition: all 0.2s ease-in-out
+	transition: all 0.2s ease-in-out
+
+
+
+	-webkit-transform: scale(0.8)
+	-moz-transform: scale(0.8)
+	-ms-transform: scale(0.8)
+	-o-transform: scale(0.8)
+	transform: scale(0.8)
+
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog
+	opacity: 1
+
+	-webkit-transform: scale(1)
+	-moz-transform: scale(1)
+	-ms-transform: scale(1)
+	-o-transform: scale(1)
+	transform: scale(1)
+
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog
+	-webkit-transform: scale(0.8)
+	-moz-transform: scale(0.8)
+	-ms-transform: scale(0.8)
+	-o-transform: scale(0.8)
+	transform: scale(0.8)
+
+	opacity: 0
+
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg
+	opacity: 0
+	-webkit-transition: opacity 0.3s ease-out
+	-moz-transition: opacity 0.3s ease-out
+	-o-transition: opacity 0.3s ease-out
+	transition: opacity 0.3s ease-out
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg
+	opacity: 0.8
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg
+	opacity: 0
+
+
+
+
+/**
+ * Fade-move animation for second dialog
+ */
+
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog
+	opacity: 0
+	-webkit-transition: all 0.2s ease-out
+	-moz-transition: all 0.2s ease-out
+	-o-transition: all 0.2s ease-out
+	transition: all 0.2s ease-out
+
+	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg )
+	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg )
+	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg )
+	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg )
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg )
+
+
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog
+	opacity: 1
+	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 )
+	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 )
+	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 )
+	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 )
+	transform: translateY(0) perspective( 600px ) rotateX( 0 )
+
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog
+	opacity: 0
+
+	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg )
+	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg )
+	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg )
+	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg )
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg )
+
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg
+	opacity: 0
+
+	-webkit-transition: opacity 0.3s ease-out
+	-moz-transition: opacity 0.3s ease-out
+	-o-transition: opacity 0.3s ease-out
+	transition: opacity 0.3s ease-out
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg
+	opacity: 0.8
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg
+	opacity: 0
+
+
+@import "media" // Всегда в конце

@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Прокат автомобилией в Москве</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body class="ishome">
+
+	<section id="header_home" class="header">
+
+		<div class="top_line">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+						<a href="/" class="logo">
+							<img src="img/logo.png" alt="Logo">
+						</a>
+						<a href="#" class="toggle-mnu hidden-sm hidden-md hidden-lg"><span></span></a>
+					</div>
+					<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+
+						<nav class="top_menu">
+							<ul>
+								<li class="active"><a href="#">Главная</a></li>
+								<li><a href="#">Условия</a></li>
+								<li><a href="#">Подбор авто</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Авто с водителем</a></li>
+								<li><a href="#">Наш парк</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+
+					</div>
+					<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+						<div class="contacts">
+							<div>
+								<a href="tel:88005202020" class="phone"><img src="img/icon_phone.png" alt="Телефон">8 800 520 20 00</a>
+							</div>
+							<div>
+								<a href="mailto:order@carrental.com"><img src="img/icon_mail.png" alt="Почта">order@carrental.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content_header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1>ПРОКАТ АВТОМОБИЛЕЙ В МОСКВЕ</h1>
+						<p class="desc">Круглосуточно <img src="img/24.jpg" alt="24"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="podbor">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="podbor_box">
+						<form  id="podbor">
+							<div class="form_head">
+								<div class="row">
+								<div class="col-md-6 col-lg-6 col-lg-offset-1">
+									<h2>Подбор автомобиля по параметрам</h2>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<label id="price_day_lab">цена за сутки</label>
+									<div class="input_group">
+										<div class="slider_price">
+											<div id="slider-margin">
+												<input id="slider-margin-value-min" type="text">
+												<input id="slider-margin-value-max" type="text">
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="form_body">
+								<div class="row">
+									<div class="col-sm-6 col-md-2 col-lg-2 col-lg-offset-1">
+										<label>Марка</label>
+										<select>
+										  <option>Toyota</option>
+										  <option>Ford</option>
+										  <option>Chevrolet</option>
+										  <option>Nissan</option>
+										  <option>Hyundai</option>
+										</select>
+									</div>
+									<div class="col-sm-6 col-md-2 col-lg-2">
+										<label>Салон</label>
+										<select>
+										  <option>Темный</option>
+										  <option>Светлый</option>
+										  <option>Лифтбэк</option>
+										  <option>Купе</option>
+										</select>
+									</div>
+									<div class="col-sm-6 col-md-2 col-lg-2">
+										<label>Кузов</label>
+										<select>
+										  <option>Седан</option>
+										  <option>Хэтчбек</option>
+										  <option>Универсал</option>
+										  <option>Кроссовер</option>
+										  <option>Внедорожник</option>
+										</select>
+									</div>
+									<div class="col-sm-6 col-md-2 col-lg-2">
+										<label>Дата выдачи</label>
+										<input type="date">
+									</div>
+									<div class="col-sm-6 col-md-3 col-lg-3">
+										<div class="chekbox_inputs">
+											<div class="input_group">
+												<input type="checkbox" id="check_with_driver" name="subscribe" value="isdriver">
+	    									<label for="check_with_driver">С водителем</label>
+	    								</div>
+	    								<div class="input_group">
+												<input type="checkbox" id="check_no_driver" name="subscribe" value="nodriver">
+	    									<label for="check_no_driver">Без водителя</label>
+	    								</div>
+    							</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 col-md-2 col-lg-2 col-lg-offset-1">
+										<label>КОЛ-ВО МЕСТ</label>
+										<select>
+										  <option>2</option>
+										  <option>4</option>
+										  <option>6</option>
+										  <option>8</option>
+										</select>
+									</div>
+									<div class="col-sm-6 col-md-2 col-lg-2">
+										<label>КОРОБКА</label>
+										<select>
+										  <option>Автомат</option>
+										  <option>Механика</option>
+										</select>
+									</div>
+									<div class="col-sm-6 col-md-2 col-lg-2">
+										<label>МОЩНОСТЬ</label>
+										<input type="text">
+									</div>
+									<div class="col-sm-6 col-md-2 col-lg-2">
+										<label>ДАТА ВОЗВРАТА</label>
+										<input type="date">
+									</div>
+									<div class="col-sm-12 col-md-3 col-lg-3">
+											<input type="submit" value="Подобрать" class="btn">
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="arenda">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="sec_title">
+						Арендовать автомобиль просто
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-md-push-4 col-lg-4 col-lg-push-4">
+					<div class="arenda_image">
+						<img src="img/arenda_image.jpg" alt="Арена автомобилей">
+					</div>
+				</div>
+				<div class="col-md-4 col-md-pull-4 col-lg-4 col-lg-pull-4">
+					<div class="arenda_left_bar">
+						<div class="step step1">
+							<img src="img/arenda_icon1.png" alt="Аренда автомобиля">
+							<div class="step_desc">
+								<h3>Выбрать автомобиль</h3>
+								<p>Вы можете выбрать и заказать автомобиль самостоятельно или позвонить нам для помощи в выборе. </p>
+							</div>
+						</div>
+						<div class="step step2">
+							<img src="img/arenda_icon2.png" alt="Аренда автомобиля">
+							<div class="step_desc">
+								<h3> Оформить заявку на сайте</h3>
+								<p>Мы на связи 7 дней в неделю и 24 часа в сутки. Всегда готовы принять заказ или провести консультацию.</p>
+							</div>
+						</div>
+						<div class="step step3">
+							<img src="img/arenda_icon3.png" alt="Аренда автомобиля">
+							<div class="step_desc">
+								<h3>Предоставить документы</h3>
+								<p>Отправить фотографии своего паспорта и прав на нашу почту для  проверки нашей службой безопасности </p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-lg-4">
+					<div class="arenda_right_bar">
+						<div class="step step4">
+							<img src="img/arenda_icon4.png" alt="Аренда автомобиля">
+							<div class="step_desc">
+								<h3>Оплатить аренду  автомобиля</h3>
+								<p>Предусмотрена любая удобная для Вас форма оплаты: наличными, банковским переводом, пластиковой картой. </p>
+							</div>
+						</div>
+						<div class="step step5">
+							<img src="img/arenda_icon5.png" alt="Аренда автомобиля">
+							<div class="step_desc">
+								<h3>Оформить договор аренды </h3>
+								<p>После одобрения заявки необходимо приехать к нам в офис для подписания договора аренды.</p>
+							</div>
+						</div>
+						<div class="step step6">
+							<img src="img/arenda_icon6.png" alt="Аренда автомобиля">
+							<div class="step_desc">
+								<h3>Принять автомобиль по акту</h3>
+								<p>Автомобиль выдаётся по акту приема-передачи в чистом виде, заправленным и укомплектованным. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="aktsiya">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="sec_desc">
+						ПРИ АРЕНДЕ АВТОМОБИЛЯ НА 10 ДНЕЙ
+					</div>
+					<div class="sec_title">
+						ДАРИМ 100 ЛИТРОВ БЕНЗИНА!
+					</div>
+					<div class="timer">
+						<div class="timer_title">
+							До конца акции осталось:
+						</div>
+						<div class="text_center">
+							<ul class="countdown">
+				        <li>
+				            <span class="days">00</span>
+				            <p class="days_ref">Дней</p>
+				        </li>
+				        <li class="seperator">:</li>
+				        <li>
+				            <span class="hours">00</span>
+				            <p class="hours_ref">Часов</p>
+				        </li>
+				        <li class="seperator">:</li>
+				        <li>
+				            <span class="minutes">00</span>
+				            <p class="minutes_ref">Минут</p>
+				        </li>
+				        <li class="seperator">:</li>
+				        <li>
+				            <span class="seconds">00</span>
+				            <p class="seconds_ref">Секунд</p>
+				        </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="auto_business">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="sec_title">
+						АРЕНДА АВТОМОБИЛЯ БИЗНЕС-КЛАССА С ВОДИТЕЛЕМ
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="catalog_auto">
+					<div class="col-lg-offset-1 col-lg-5">
+						<article class="auto_item">
+							<a href="#" class="auto_item_link">
+								<img src="img/catalog/auto_bussines1.png" alt="Auto">
+							</a>
+								<div class="overlay">
+									<table>
+										<tr>
+									    <th>
+									    	<div class="rating_auto">
+										    	<i class="fa fa-star" style="color: #BA0133"></i>
+										    	<i class="fa fa-star" style="color: #BA0133"></i>
+										    	<i class="fa fa-star" style="color: #BA0133"></i>
+										    	<i class="fa fa-star" style="color: #BA0133"></i>
+										    	<i class="fa fa-star" style="color: #7B769A"></i>
+										    	<span>(5 отзывов)</span>
+									    	</div>
+									    </th>
+									  </tr>
+									  <tr>
+									    <td>Класс: <span>Бизнесс</span></td>
+									    <td>Кол-во мест: <span>5</span></td>
+									  </tr>
+									  <tr>
+									    <td>Год выпуска <span>2016</span></td>
+									    <td>Цвет: <span>Белый</span></td>
+									  </tr>
+									  <tr>
+									    <td>Тип трансмиссии:<span>АКПП</span></td>
+									    <td>Климат контроль: <span>Есть</span></td>
+									  </tr>
+									  </tr>
+									</table>
+									<div class="btn_set">
+										<a href="#" class="refresh_btn"></a>
+										<a href="#" class="seach_btn"></a>
+									</div>
+
+								</div>
+								<div class="desc">
+									<h1>Marsedes-Benz E-200 W212</h1>
+									<span class="price">От 12500 <i class="fa fa-rub"></i></span>
+								</div>
+						</article>
+					</div>
+					<div class="col-lg-5">
+						<article class="auto_item">
+							<a href="#" class="auto_item_link">
+								<img src="img/catalog/auto_bussines2.png" alt="Auto">
+							</a>
+								<div class="overlay">
+									<table>
+										<tr>
+									    <th>
+									    	<div class="rating_auto">
+										    	<i class="fa fa-star" style="color: #BA0133"></i>
+										    	<i class="fa fa-star" style="color: #BA0133"></i>
+										    	<i class="fa fa-star" style="color: #BA0133"></i>
+										    	<i class="fa fa-star" style="color: #BA0133"></i>
+										    	<i class="fa fa-star" style="color: #7B769A"></i>
+										    	<span>(5 отзывов)</span>
+									    	</div>
+									    </th>
+									  </tr>
+									  <tr>
+									    <td>Класс: <span>Бизнесс</span></td>
+									    <td>Кол-во мест: <span>5</span></td>
+									  </tr>
+									  <tr>
+									    <td>Год выпуска <span>2016</span></td>
+									    <td>Цвет: <span>Белый</span></td>
+									  </tr>
+									  <tr>
+									    <td>Тип трансмиссии:<span>АКПП</span></td>
+									    <td>Климат контроль: <span>Есть</span></td>
+									  </tr>
+									  </tr>
+									</table>
+									<div class="btn_set">
+										<a href="#" class="refresh_btn"></a>
+										<a href="#" class="seach_btn"></a>
+									</div>
+
+								</div>
+								<div class="desc">
+									<h1> Audi A8, III (D4) </h1>
+									<span class="price">От 15000 <i class="fa fa-rub"></i></span>
+								</div>
+						</article>
+					</div>
+					<div class="row">
+						<div class="col-lg-offset-1 col-lg-5">
+							<article class="auto_item">
+								<a href="#" class="auto_item_link">
+									<img src="img/catalog/auto_bussines3.png" alt="Auto">
+								</a>
+									<div class="overlay">
+										<table>
+											<tr>
+										    <th>
+										    	<div class="rating_auto">
+											    	<i class="fa fa-star" style="color: #BA0133"></i>
+											    	<i class="fa fa-star" style="color: #BA0133"></i>
+											    	<i class="fa fa-star" style="color: #BA0133"></i>
+											    	<i class="fa fa-star" style="color: #BA0133"></i>
+											    	<i class="fa fa-star" style="color: #7B769A"></i>
+											    	<span>(5 отзывов)</span>
+										    	</div>
+										    </th>
+										  </tr>
+										  <tr>
+										    <td>Класс: <span>Бизнесс</span></td>
+										    <td>Кол-во мест: <span>5</span></td>
+										  </tr>
+										  <tr>
+										    <td>Год выпуска <span>2016</span></td>
+										    <td>Цвет: <span>Белый</span></td>
+										  </tr>
+										  <tr>
+										    <td>Тип трансмиссии:<span>АКПП</span></td>
+										    <td>Климат контроль: <span>Есть</span></td>
+										  </tr>
+										  </tr>
+										</table>
+										<div class="btn_set">
+											<a href="#" class="refresh_btn"></a>
+											<a href="#" class="seach_btn"></a>
+										</div>
+
+									</div>
+									<div class="desc">
+										<h1> BMW X6 M Hamann</h1>
+										<span class="price">От 21300 <i class="fa fa-rub"></i></span>
+									</div>
+							</article>
+						</div>
+						<div class="col-lg-5">
+							<article class="auto_item">
+								<a href="#" class="auto_item_link">
+									<img src="img/catalog/auto_bussines4.png" alt="Auto">
+								</a>
+									<div class="overlay">
+										<table>
+											<tr>
+										    <th>
+										    	<div class="rating_auto">
+											    	<i class="fa fa-star" style="color: #BA0133"></i>
+											    	<i class="fa fa-star" style="color: #BA0133"></i>
+											    	<i class="fa fa-star" style="color: #BA0133"></i>
+											    	<i class="fa fa-star" style="color: #BA0133"></i>
+											    	<i class="fa fa-star" style="color: #7B769A"></i>
+											    	<span>(5 отзывов)</span>
+										    	</div>
+										    </th>
+										  </tr>
+										  <tr>
+										    <td>Класс: <span>Бизнесс</span></td>
+										    <td>Кол-во мест: <span>5</span></td>
+										  </tr>
+										  <tr>
+										    <td>Год выпуска <span>2016</span></td>
+										    <td>Цвет: <span>Белый</span></td>
+										  </tr>
+										  <tr>
+										    <td>Тип трансмиссии:<span>АКПП</span></td>
+										    <td>Климат контроль: <span>Есть</span></td>
+										  </tr>
+										  </tr>
+										</table>
+										<div class="btn_set">
+											<a href="#" class="refresh_btn"></a>
+											<a href="#" class="seach_btn"></a>
+										</div>
+
+									</div>
+									<div class="desc">
+										<h1>Lexus IS 200t</h1>
+										<span class="price">От 25000 <i class="fa fa-rub"></i></span>
+									</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="new_year">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="content">
+						<img src="img/news_year.png" alt="Alt">
+						<p>Арендуйте автомобиль с друзьями или родными <br> и отправляйтесь в путешествие!  </p>
+						<a href="#small-dialog" class="btn popup-with-move-anim">Забронировать</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="usloviya">
+						<span> * При бронировании автомобиля с водителем до 30 ноября 2017 года скидка на аренду автомобиля на 2018 год  20 % </span>
+						<span> * При бронировании автомобиля до 30 ноября 2017 года скидка на аренду автомобиля на 2018 год от 30 %</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="catalog_auto">
+		<div class="cat_filter">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-lg-3">
+						<h3>Наш автопарк</h3>
+					</div>
+					<div class="col-xs-12 col-lg-6">
+						<div class="filter">
+							<span>ФИЛЬТРОВАТЬ ПО:</span>
+							<select>
+								<option value="Цена">По возрастанию цены</option>
+								<option value="Цена">По убыванию цены</option>
+								<option value="Цена">Популярные</option>
+								<option value="Цена">Новые авто</option>
+								<option value="Цена">По рейтингу</option>
+							</select>
+							<i class="fa fa-angle-down"></i>
+						</div>
+					</div>
+					<div class="col-xs-12 col-lg-3">
+						<a href="#" class="cat_list"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="catalog">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto1.png" alt="Alt">
+							<div class="price_name">
+								<h1>Renault Logan</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 1100 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2013</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Седан</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>МКП5</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Нет</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto2.png" alt="Alt">
+							<div class="price_name">
+								<h1>KIA PICANTO</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 1100 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2014</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>ХETЧБЕК</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto3.png" alt="Alt">
+							<div class="price_name">
+								<h1>FIAT PANDA</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 1150 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2014</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>ХETЧБЕК</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto4.png" alt="Alt">
+							<div class="price_name">
+								<h1>PEUGEOT 107</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 1200 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2014</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Седан</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto5.png" alt="Alt">
+							<div class="price_name">
+								<h1>Hyundai Solaris</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 1350 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2014</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Седан</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto6.png" alt="Alt">
+							<div class="price_name">
+								<h1>RENAULT SYMBOL</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 1350 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2015</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Седан</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto7.png" alt="Alt">
+							<div class="price_name">
+								<h1>CHEVROLET AVEO</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 1400 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2015</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Седан</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto8.png" alt="Alt">
+							<div class="price_name">
+								<h1>KIA RIO</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 1400 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2016</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Седан</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto9.png" alt="Alt">
+							<div class="price_name">
+								<h1>CHEVROLET CRUZE</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 1650 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2016</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Седан</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto10.png" alt="Alt">
+							<div class="price_name">
+								<h1>SKODA FABIA</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 1700 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2016</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Седан</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto11.png" alt="Alt">
+							<div class="price_name">
+								<h1>VOLKSWAGEN POLO</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 1750 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2016</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Хетчбек</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Нет</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto12.png" alt="Alt">
+							<div class="price_name">
+								<h1>CHEVROLET CRUZE</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 1900 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2015</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Седан</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto13.png" alt="Alt">
+							<div class="price_name">
+								<h1>SKODA OCTAVIA</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 2050 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2015</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Седан</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto14.png" alt="Alt">
+							<div class="price_name">
+								<h1>HYUNDAI I40</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 2300 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2015</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Седан</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto15.png" alt="Alt">
+							<div class="price_name">
+								<h1>SKODA YETI</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 2450 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2016</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Внедорож.</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<article class="car_item">
+							<div class="btn_top_set">
+								<a href="#" class="refresh_btn"></a>
+								<a href="#" class="seach_btn"></a>
+							</div>
+							<img src="img/catalog/auto16.png" alt="Alt">
+							<div class="price_name">
+								<h1>NISSAN TEANA</h1>
+								<div class="rating_auto">
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #cd283e"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+									<i class="fa fa-star" style="color: #8f98ac"></i>
+								</div>
+							</div>
+							<div class="price">
+									Стоимость <span>от 2800 р.</span> / сутки
+								</div>
+							<div class="char_auto">
+								<table>
+									<tr>
+								    <td>Год выпуска: </td>
+								    <td><span>2016</span></td>
+								  </tr>
+								  <tr>
+								    <td>Вид кузова:</td>
+								    <td><span>Седан</span></td>
+								  </tr>
+								  <tr>
+								    <td>Коробка передач</td>
+								    <td><span>АКПП</span></td>
+								  </tr>
+								  <tr>
+								    <td>Кондиционер:</td>
+								    <td><span>Есть</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div class="btn_set">
+								<a href="#" class="btn podrobnee">Подробнее</a>
+								<a href="#small-dialog" class="btn popup-with-move-anim arendovat">Арендовать</a>
+							</div>
+						</article>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-3 col-lg-12">
+						<div class="listing">
+							<span><i class="fa fa-angle-left"></i></span>
+							<a href="#" class="active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<span><i class="fa fa-angle-right"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="support">
+		<div class="row">
+			<div class="container">
+				<div class="col-lg-12">
+					<img src="img/support24-7.png" alt="Поддежка 24/7">
+					<div class="sec_title">НАША <span>СЛУЖБА ПОДДЕРЖКИ</span> ПОМОГАЕТ  КЛИЕНТАМ НА ВСЕМ ПУТИ СЛЕДОВАНИЯ!</div>
+					<div class="sec_desc">ПРОСТО ПОЗВОНИТЕ ПО ТЕЛЕФОНУ : <span>8 800 520 20 20</span></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="sec_title">АВТОНОВОСТИ И НОВИНКИ АВТО</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="blog_items">
+					<div class="col-lg-4">
+						<article>
+							<img src="img/blog/article_img1.jpg" alt="Alt">
+							<div class="data_article">
+								<span>16</span>
+								ноября
+							</div>
+							<h1>В ЛИНЕЙКЕ BMW I ПОЯВЯТСЯ КРОССОВЕРЫ </h1>
+							<p>Компания BMW зарегистрировала в качестве товарных
+								знаков новые индексы «ix». Это говорит о том, что
+								баварцы готовят экологические кроссоверы.
+							</p>
+							<a href="#" class="link_article">Подробнее</a>
+						</article>
+					</div>
+					<div class="col-lg-4">
+						<article>
+							<img src="img/blog/article_img2.jpg" alt="Alt">
+							<div class="data_article">
+								<span>17</span>
+								ноября
+							</div>
+							<h1>КИТАЙЦЫ КЛОНИРОВАЛИ LAND ROVER</h1>
+							<p>Китайская компания  Changang представила свой новый кроссовер, который получил индекс Х70А. Машина очень похожа на Land Rover Discovery. </p>
+							<a href="#" class="link_article">Подробнее</a>
+						</article>
+					</div>
+					<div class="col-lg-4">
+						<article>
+							<img src="img/blog/article_img3.jpg" alt="Alt">
+							<div class="data_article">
+								<span>16</span>
+								ноября
+							</div>
+							<h1>NISSAN ПРЕКРАТИЛ В РОССИИ ПРОДАЖИ ДВУХ МОДЕЛЕЙ </h1>
+							<p>Компания Nissan официально прекращает в России двух моделей: седана Sentra и кроссовера Pathfinder. Дилеры больше не принимают на них заказы. </p>
+							<a href="#" class="link_article">Подробнее</a>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="foot_colum">
+						<h3>ооо <span>Carreantal</span></h3>
+						<p class="foot_desc">прокат автомобилей в москве</p>
+						<ul class="adress">
+							<li>
+								<i class="fa fa-map-marker"></i>
+								<span>Наш адрес:</span>
+								<div>Г. МОСКВА, Улица Осенняя, 23</div>
+							</li>
+							<li><i class="fa fa-phone"></i>8 800 520 20 00</li>
+							<li><i class="fa fa-envelope-o"></i>order@сarrental.com</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="foot_colum">
+						<h3>Разделы <span>сайта</span></h3>
+						<ul class="foot_nav">
+							<li><a href="#"><i class="fa fa-angle-right"></i>Главная</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i>Подбор авто</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i>Авто с водителем</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i>Новости</a></li>
+						</ul>
+						<ul class="foot_nav">
+							<li><a href="#"><i class="fa fa-angle-right"></i>Условия</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i>Акции</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i>Наш парк</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i>Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="foot_colum">
+						<div class="col-lg-12"><h3>оставить <span>заявку</span></h3></div>
+						<form class="form_footer">
+								<div class="col-lg-6"><input type="text" placeholder="Имя" required></div>
+								<div class="col-lg-6"><input type="text" placeholder="Телефон" required></div>
+								<div class="col-lg-12">
+									<textarea cols="30" rows="5" placeholder="Сообщение"></textarea>
+								</div>
+								<div class="col-lg-12">
+									<button class="btn">Отправить</button>
+								</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="copyright">
+						© Copyright <span>Carrental</span> 2013-2017
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+		<h3>АРЕНДОВАТЬ  АВТОМОБИЛЬ</h3>
+		<form>
+			<div class="input_group">
+				<div class="row">
+					<div class="col-lg-6">
+						<label>ФАМИЛИЯ ИМЯ ОТЧЕСТВО</label>
+						<input type="text" required placeholder="ИВАНОВ ИВАН ИВАНОВИЧ">
+					</div>
+					<div class="col-lg-3">
+						<label>ДАТА ВЫДАЧИ</label>
+						<input type="date">
+					</div>
+					<div class="col-lg-3">
+						<label>ВРЕМЯ ВЫДАЧИ</label>
+						<input type="time">
+					</div>
+				</div>
+			</div>
+			<div class="input_group">
+				<div class="row">
+					<div class="col-lg-6">
+						<label>ТЕЛЕФОН</label>
+						<input type="text" required placeholder="8 903 383 12 54">
+					</div>
+					<div class="col-lg-3">
+						<label>ДАТА ВОЗВРАТА</label>
+						<input type="date">
+					</div>
+					<div class="col-lg-3">
+						<label>ВРЕМЯ ВОЗВРАТА</label>
+						<input type="time">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-8">
+					<label for="iagree" id="labl_iagree"><input type="checkbox" id="iagree" required>Согласие на обработку персональных данных
+					</label>
+				</div>
+				<div class="col-lg-4">
+					<button class="btn">Арендовать</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+
+</body>
+</html>
